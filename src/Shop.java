@@ -37,13 +37,13 @@ public class Shop {
         System.out.printf("[ ] You purchased %s", item.name);
         return true;
     }
-
     public void sell(ShopItem item, Player player){
         player.cash += item.price * 0.9;
     }
-
     public void sellNItems(ShopItem item, Player player, int numberOfItems){
         player.cash += item.price * numberOfItems * 0.9;
     }
-
+    public void buyNItems(ShopItem item, Player player, int numberOfItems){
+        player.cash -= item.price * numberOfItems;
+    }
 }

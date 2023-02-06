@@ -6,7 +6,6 @@ public class Building extends ShopItem{
     String type;
     int landsSize;
     int aniamalsCapacity;
-
     List<Animal> animals;
 
     public Building(String name, int price, String type) {

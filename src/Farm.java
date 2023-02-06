@@ -7,7 +7,6 @@ public class Farm extends ShopItem {
     List<Land> lands;
     List<Animal> animals;
     List<Plant> plants;
-
     public Farm(String name, int price, int landSize){
         super(name, price);
         this.lands = new ArrayList<Land>();
